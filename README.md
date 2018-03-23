@@ -1,10 +1,10 @@
 # LevelUp Watch Edition App Development Environment
 
-[![Build Status](https://circleci.com/gh/twlevelup/watch_edition.png)](https://circleci.com/gh/twlevelup/watch_edition)
+[![CircleCI](https://circleci.com/gh/twlevelup/mel-2018-sem1-unicorns.svg?style=svg)](https://circleci.com/gh/twlevelup/mel-2018-sem1-unicorns)
 
 This git repo contains all the code you need to prototype apps for the Proto Watch.
 
-The [wiki](https://github.com/twlevelup/watch_edition/wiki) contains lots of useful documentation
+Start at the master [wiki](https://github.com/twlevelup/watch_edition/wiki), which contains lots of useful documentation.
 
 # Installation
 
@@ -12,8 +12,8 @@ See the [Installation Instructions](https://github.com/twlevelup/watch_edition/w
 
 # Continuous Integration
 
-This project is continuously deployed to heroku by [Circle CI](https://circleci.com).
-You can view this app at [https://twlevelup-watch-edition.herokuapp.com/](https://twlevelup-watch-edition.herokuapp.com/)
+This project is continuously deployed to GitHub Pages by [Circle CI](https://circleci.com).
+You can view this app at [https://twlevelup.github.io/mel-2018-sem1-dragons/](https://twlevelup.github.io/mel-2018-sem1-unicorns/)
 
 ### Before you push
 
@@ -29,11 +29,5 @@ You can view this app at [https://twlevelup-watch-edition.herokuapp.com/](https:
 7. Run ```git push```
 
 ### Checking the build status
+You can access the CI server and view the status of the build here [Circle CI](https://circleci.com/gh/twlevelup/mel-2018-sem1-unicorns)
 
-To view the build status and get notifications about the build status:
-
-Add the following XML config to CCTray or CCMenu on your dev machine
-
-	https://circleci.com/gh/twlevelup/watch_edition.cc.xml
-
-You can also access the CI server and view the status of the build here [Circle CI](https://circleci.com/gh/twlevelup/watch_edition)

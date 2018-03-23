@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/twlevelup/mel-2018-sem1-unicorns.svg?style=svg)](https://circleci.com/gh/twlevelup/mel-2018-sem1-unicorns)
 
-This git repo contains all the code you need to prototype apps for the Proto Watch.
+This git repo contains all the code you need to prototype apps for the Watch.
 Start at the master [wiki](https://github.com/twlevelup/watch_edition/wiki), which contains lots of useful documentation.
 
 # Installation

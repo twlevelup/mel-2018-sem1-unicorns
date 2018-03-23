@@ -13,7 +13,7 @@ See the [Installation Instructions](https://github.com/twlevelup/watch_edition/w
 # Continuous Integration
 
 This project is continuously deployed to GitHub Pages by [Circle CI](https://circleci.com).
-You can view this app at [https://twlevelup.github.io/mel-2018-sem1-dragons/](https://twlevelup.github.io/mel-2018-sem1-unicorns/)
+You can view this app at [https://twlevelup.github.io/mel-2018-sem1-unicorns/](https://twlevelup.github.io/mel-2018-sem1-unicorns/)
 
 ### Before you push
 

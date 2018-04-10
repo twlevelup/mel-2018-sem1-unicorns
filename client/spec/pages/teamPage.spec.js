@@ -18,8 +18,7 @@ describe('TeamPage', () => {
       expect(page.template()).toContain("Sirani McNeil");
       expect(page.template()).toContain("Yashwanth");
       expect(page.template()).toContain("Kathy");
-      
+      expect(page.template()).toContain("Agnes");
     });
-});
-
+  });  
 });

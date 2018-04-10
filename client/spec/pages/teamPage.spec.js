@@ -20,6 +20,7 @@ describe("TeamPage", () => {
       expect(page.template()).toContain("Kathy");
       expect(page.template()).toContain("Agnes");
       expect(page.template()).toContain("Hannah");
+      expect(page.template()).toContain("Martin");
     });
   });
 });

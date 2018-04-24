@@ -1,4 +1,4 @@
-const alert = require('../../src/js/pages/alert');
+const Alert = require('../../src/js/pages/alert');
 
 describe('alert', () => {
   let watchFace;
@@ -10,13 +10,17 @@ describe('alert', () => {
 
   describe('#template', () => {
     it('should have a template', () => {
+
+      const schedule = [
+        { subject: "Take your medicine", time: "10am" }
+      ];
       const page = new Alert(schedule);
       expect(page.template()).toContain("<h1>Take your medicine</h1>");
     });
   });
 
   describe('#rightButtonEvent', () => {
-    it('goes to root page', () => {
+    it('goes to home page', () => {
       const props = {
         navigate: () => { },
       };
@@ -24,7 +28,7 @@ describe('alert', () => {
       spyOn(page, 'navigate');
 
       page.rightButtonEvent();
-      expect(page.navigate.alert).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });
 
@@ -47,7 +51,7 @@ describe('alert', () => {
       const props = {
         navigate: () => { },
       };
-      const page = new alert(props);
+      const page = new Alert(props);
       spyOn(page, 'navigate');
 
       page.topButtonEvent();

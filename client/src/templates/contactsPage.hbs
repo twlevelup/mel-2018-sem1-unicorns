@@ -1,9 +1,12 @@
-<h1>Contacts</h1>
+
 <ul>
   {{#each contacts}}
+  <h1>{{this.position}}</h1>
+  <br/><br/>
     <li>
       <span>Name: {{this.name}}</span>
       <br/>
+      <span>Title: {{this.description}}</span><br/>
       <span>Phone: {{this.phoneNumber}}</span>
     </li>
   {{/each}}

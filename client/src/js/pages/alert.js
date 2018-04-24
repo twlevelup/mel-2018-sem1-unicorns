@@ -17,6 +17,22 @@ class Alert extends BasePage {
     };
     return compiledTemplate(context);
   }
+
+  rightButtonEvent() {
+    this.navigate("/");
+  }
+
+  leftButtonEvent() {
+    this.navigate("/");
+  }
+
+  topButtonEvent() {
+    this.navigate("/");
+  }
+
+  bottomButtonEvent() {
+    this.navigate("/");
+  }
 }
 
 module.exports = Alert;

@@ -16,16 +16,12 @@ class HomePage extends BasePage {
     return compiledTemplate(context);
   }
 
-  rightButtonEvent() {
+  leftButtonEvent() {
     this.navigate("contacts");
   }
 
-  leftButtonEvent() {
+  rightButtonEvent() {
     this.navigate("about");
-  }
-
-  topButtonEvent() {
-    this.watchFace.scrollTop -= 40;
   }
 
   bottomButtonEvent() {

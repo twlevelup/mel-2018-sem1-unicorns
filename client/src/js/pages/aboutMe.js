@@ -22,7 +22,7 @@ class AboutMe extends BasePage {
     return compiledTemplate(context);
   }
 
-  leftButtonEvent() {
+  topButtonEvent() {
     this.navigate("/");
   }
 }

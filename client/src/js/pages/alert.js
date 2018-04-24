@@ -19,20 +19,19 @@ class Alert extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate("/")
+    this.navigate("/");
   }
 
-
-leftButtonEvent() {
-  this.navigate("/")
+  leftButtonEvent() {
+    this.navigate("/");
   }
 
-topButtonEvent() {
-  this.navigate("/")
-}
+  topButtonEvent() {
+    this.navigate("/");
+  }
 
-bottomButtonEvent() {
-  this.navigate("/")
+  bottomButtonEvent() {
+    this.navigate("/");
   }
 }
 

@@ -17,4 +17,12 @@ describe("AboutMe", () => {
     const page = new AboutMe(props);
     expect(page.template()).toContain("<h1>James Peters</h1>");
   });
+  it("goes to root page when the top button is pressed", () => {
+    const props = { navigate: () => {} };
+    const page = new AboutMe(props);
+    spyOn(page, "navigate");
+
+    page.topButtonEvent();
+    expect(page.navigate).toHaveBeenCalledWith("/");
+  });
 });

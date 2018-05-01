@@ -1,6 +1,6 @@
-const ContactsPage = require("../../src/js/pages/contactsPage");
+const SecondContactsPage = require("../../src/js/pages/secondContactsPage");
 
-describe("ContactsPage", () => {
+describe("ContactsPage no. 2", () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -9,15 +9,14 @@ describe("ContactsPage", () => {
 
   describe("#template", () => {
     it("should have a template", () => {
-      const page = new ContactsPage();
-      expect(page.template()).toContain("<h3>Primary Contact</h3>");
+      const page = new SecondContactsPage();
+      expect(page.template()).toContain("<h2>0431 111 111</h2>");
     });
 
     it("should have a template with specific contacts", () => {
       const contacts = [{ name: "hi", phoneNumber: "1234" }];
       const props = { contacts };
-      const page = new ContactsPage(props);
-      expect(page.template()).toContain("<h1>hi</h1>");
+      const page = new SecondContactsPage(props);
       expect(page.template()).toContain("<h2>1234</h2>");
     });
   });
@@ -27,24 +26,11 @@ describe("ContactsPage", () => {
       const props = {
         navigate: () => {}
       };
-      const page = new ContactsPage(props);
+      const page = new SecondContactsPage(props);
       spyOn(page, "navigate");
 
       page.topButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith("/");
-    });
-  });
-
-  describe("#bottomButtonEvent", () => {
-    it("goes to the second contacts page", () => {
-      const props = {
-        navigate: () => {}
-      };
-      const page = new ContactsPage(props);
-      spyOn(page, "navigate");
-
-      page.bottomButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith("secondcontacts");
     });
   });
 });

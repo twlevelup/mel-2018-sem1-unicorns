@@ -1,9 +1,9 @@
 require("../../styles/pages/contacts.scss");
 
 const BasePage = require("watch-framework").BasePage;
-const compiledTemplate = require("../../templates/contactsPage.hbs");
+const compiledTemplate = require("../../templates/secondContactsPage.hbs");
 
-class ContactsPage extends BasePage {
+class SecondContactsPage extends BasePage {
   constructor(props = {}) {
     super(props);
     this.contacts = props.contacts || [
@@ -23,17 +23,13 @@ class ContactsPage extends BasePage {
     return compiledTemplate(context);
   }
 
-  bottomButtonEvent() {
-    // if (this.name.length > 10) {
-    //   this.watchFace.scrollTop += 40;
-    // } else {
-    this.navigate("secondcontacts");
-    // }
-  }
-
   topButtonEvent() {
     this.navigate("/");
   }
+
+  bottomButtonEvent() {
+    this.navigate("contacts");
+  }
 }
 
-module.exports = ContactsPage;
+module.exports = SecondContactsPage;

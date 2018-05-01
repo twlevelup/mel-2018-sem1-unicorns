@@ -10,7 +10,7 @@ class AboutMe extends BasePage {
       {
         firstName: "Alice",
         lastName: "Smith",
-        address: "101 Collins Street, Melbourne"
+        address: "Level 7, 202 Collins Street, Carlton, VIC, 3000"
       }
     ];
   }

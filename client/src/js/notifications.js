@@ -1,14 +1,19 @@
 const notifications = [
   {
-    type: "alert",
-    label: "Alert",
-    defaultValue: "This is a test alert",
+    type: "medicine",
+    label: "Medicine",
+    defaultValue: "Take your medicine",
   },
   {
-    type: "push",
-    label: "Push",
-    defaultValue: "This is a test push notification",
-  }
+    type: "doctor",
+    label: "Doctor",
+    defaultValue: "Call your doctor",
+  },
+  {
+    type: "lunch",
+    label: "Lunch",
+    defaultValue: "Go to lunch with your daughter at 1pm",
+  },
 ];
 
 module.exports = notifications;

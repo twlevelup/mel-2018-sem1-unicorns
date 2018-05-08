@@ -5,8 +5,14 @@ const compiledTemplate = require("../../templates/homePage.hbs");
 
 const time = new Date(Date.now()).toLocaleString().split(",")[1];
 const am_pm = new Date(Date.now()).toLocaleString().split(" ")[2];
-const curr_hour = time.split(":")[0];
-const curr_min = time.split(":")[1];
+const curr_hour = new Date(Date.now())
+  .toLocaleString()
+  .split(" ")[1]
+  .split(":")[0];
+const curr_min = new Date(Date.now())
+  .toLocaleString()
+  .split(" ")[1]
+  .split(":")[1];
 
 const date = new Date(Date.now()).toLocaleString().split(",")[0];
 

@@ -1,9 +1,11 @@
-<div id="contacts">
-  {{#each contacts}}
-  <h3>{{this.position}}</h3>
-  <h1>{{this.name}}</h1>
-  {{!--
-  <span>{{this.description}}</span> --}}
-  <h2>{{this.phoneNumber}}</h2>
-  {{/each}}
+<div id="contacts-page">
+  <div id="contacts">
+    {{#each contacts}}
+    <div class="position">{{this.position}}</div>
+    <div class="name">{{this.name}}</div>
+    {{!--
+    <span>{{this.description}}</span> --}}
+    <div class="phoneNumber">{{this.phoneNumber}}</div>
+    {{/each}}
+  </div>
 </div id="contacts">

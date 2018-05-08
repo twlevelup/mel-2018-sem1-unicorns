@@ -8,8 +8,8 @@ class AboutMe extends BasePage {
     super(props);
     this.details = props.details || [
       {
-        firstName: "Alice",
-        lastName: "Smith",
+        firstName: "Yashwanth",
+        lastName: "Yellapragada",
         address: "Level 7, 202 Collins Street, Carlton, VIC, 3000"
       }
     ];

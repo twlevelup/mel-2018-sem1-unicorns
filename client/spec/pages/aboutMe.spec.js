@@ -3,7 +3,7 @@ const AboutMe = require("../../src/js/pages/aboutMe");
 describe("AboutMe", () => {
   it("should have a template with specific details if no props are passed", () => {
     const page = new AboutMe();
-    expect(page.template()).toContain("<h1>Alice Smith</h1>");
+    expect(page.template()).toContain("<h1>Yashwanth Yellapragada</h1>");
   });
   it("should display the wearers full name and address when they are passed in", () => {
     const details = [

@@ -10,7 +10,19 @@ describe("HomePage", () => {
   describe("#template", () => {
     it("should have a template", () => {
       const page = new HomePage();
-      expect(page.template()).toContain("<div>Hello, World!</div>");
+      let time = new Date(Date.now()).toLocaleString().split(",")[1];
+      const am_pm = time.split(" ")[2];
+      const curr_hour = time.split(":")[0];
+      const curr_min = time.split(":")[1];
+      expect(page.template()).toContain(
+        '<p class="clock-time">' +
+          curr_hour +
+          ":" +
+          curr_min +
+          " " +
+          am_pm +
+          "</p>"
+      );
     });
   });
 

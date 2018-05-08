@@ -37,6 +37,7 @@
     "json-loader": "^0.5.4",
     "lodash": "^4.17.5",
     "node-sass": "^4.7.2",
+    "npm": "^6.0.0",
     "sass-loader": "^3.2.3",
     "start": "^5.1.0",
     "style-loader": "^0.13.1",

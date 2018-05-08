@@ -1,3 +1,15 @@
 #home {
-  font-style: italic;
+  text-align: center;
+  padding-top: 1.5rem;
+  p {
+    padding: 0rem;
+  }
+  .clock-time {
+    margin: 1rem 0 0.1rem 0;
+    font-size: 3.2rem;
+  }
+  .clock-date {
+    font-size: 2rem;
+    margin: 0;
+  }
 }

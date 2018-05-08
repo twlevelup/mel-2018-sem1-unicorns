@@ -10,8 +10,7 @@ describe("HomePage", () => {
   describe("#template", () => {
     it("should have a template", () => {
       const page = new HomePage();
-      let time = new Date(Date.now()).toLocaleString().split(",")[1];
-      const am_pm = time.split(" ")[2];
+      const am_pm = new Date(Date.now()).toLocaleString().split(" ")[2];
       const curr_hour = new Date(Date.now())
         .toLocaleString()
         .split(" ")[1]

@@ -3,7 +3,6 @@ require("../../styles/pages/home.scss");
 const BasePage = require("watch-framework").BasePage;
 const compiledTemplate = require("../../templates/homePage.hbs");
 
-const time = new Date(Date.now()).toLocaleString().split(",")[1];
 const am_pm = new Date(Date.now()).toLocaleString().split(" ")[2];
 const curr_hour = new Date(Date.now())
   .toLocaleString()

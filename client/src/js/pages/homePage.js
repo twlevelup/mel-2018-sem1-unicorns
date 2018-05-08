@@ -4,7 +4,7 @@ const BasePage = require("watch-framework").BasePage;
 const compiledTemplate = require("../../templates/homePage.hbs");
 
 const time = new Date(Date.now()).toLocaleString().split(",")[1];
-const am_pm = time.split(" ")[2];
+const am_pm = new Date(Date.now()).toLocaleString().split(" ")[2];
 const curr_hour = time.split(":")[0];
 const curr_min = time.split(":")[1];
 

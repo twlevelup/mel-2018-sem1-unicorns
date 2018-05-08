@@ -2,18 +2,19 @@
   background-color: white;
   color: black;
   position: absolute;
-  height: 160px;
-  width: 160px;
-  top: 50px;
-  left: 50px;
+  height: 200px;
+  width: 200px;
+  top: 0px;
+  left: 0px;
   opacity: 0.9;
   z-index: 100;
-  padding: 20px;
+  padding: 50px;
+  border-radius: 52px;
 }
 
 #notification-message-display {
-  height: 70%;
-  font-size: 30px;
+  height: 90%;
+  font-size: 35px;
   text-align: center;
 }
 

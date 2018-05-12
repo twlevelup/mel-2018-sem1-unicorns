@@ -10,15 +10,15 @@ describe("ContactsPage", () => {
   describe("#template", () => {
     it("should have a template", () => {
       const page = new ContactsPage();
-      expect(page.template()).toContain("<h3>Primary Contact</h3>");
+      expect(page.template()).toContain("<div class=\"position\">Primary Contact</div>");
     });
 
     it("should have a template with specific contacts", () => {
       const contacts = [{ name: "hi", phoneNumber: "1234" }];
       const props = { contacts };
       const page = new ContactsPage(props);
-      expect(page.template()).toContain("<h1>hi</h1>");
-      expect(page.template()).toContain("<h2>1234</h2>");
+      expect(page.template()).toContain("<div class=\"name\">hi</div>");
+      expect(page.template()).toContain("<div class=\"phoneNumber\">1234</div>");
     });
   });
 
